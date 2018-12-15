@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a709435d5a6923848a2dcbc3f3014d1f, type: 3}
+  m_Name: Lab
+  m_EditorClassIdentifier: 
+  description: "The garage is dark, and cold.  \nOn the far side, closest to the house,
+    there is a desk with three glowing computer screens on it. \nStaring into one
+    of the computer screens is a woman.\nShe has a medium build, 5'10 approximately,
+    brown hair, wearing a zip up sweater and track pants.  \nHer fingers are on the
+    keys of a keyboard."
+  prompt: Garage
+  roomName: Garage
+  cutScene: {fileID: 0}
+  isObject: 0
+  isGoal: 0
+  children:
+  - {fileID: 11400000, guid: 63ca96beb77df274eb57f8101fe7a3f2, type: 2}
+  - {fileID: 11400000, guid: 6a75ab2c2ddfd164f987e28e6ea87c2f, type: 2}

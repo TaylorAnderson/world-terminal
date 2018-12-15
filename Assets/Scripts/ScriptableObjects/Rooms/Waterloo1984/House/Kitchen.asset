@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a709435d5a6923848a2dcbc3f3014d1f, type: 3}
+  m_Name: Kitchen
+  m_EditorClassIdentifier: 
+  description: 
+  prompt: 
+  roomName: 
+  cutScene: {fileID: 0}
+  isObject: 0
+  isGoal: 0
+  children:
+  - {fileID: 11400000, guid: f5daefd39e72c0943b1bab46fd4aa960, type: 2}
