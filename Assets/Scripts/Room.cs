@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+[System.Serializable]
 
-[CreateAssetMenu(menuName = "TextAdventure/Room")]
-
-
-public class Room : ScriptableObject {
+public class Room : MonoBehaviour {
+  [HideInInspector]
+  public string roomName;
+  public string[] roomPrompts;
   [TextArea(15, 20)]
   public string description;
-
-  [TextArea]
-  public string prompt;
-
-  public string roomName;
 
   public CutScene cutScene;
 
   public bool isObject;
   public bool isGoal;
+  public bool accessible = true;
+  public Sound sound;
+}
 
-  public Room[] children;
-
-
+[System.Serializable]
+public class Sound {
+  public AudioClip clip;
+  [Range(0, 1)]
+  public float volume = 1;
 }

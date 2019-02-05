@@ -20,7 +20,11 @@ public class TextInput : MonoBehaviour {
   }
   private void AcceptStringInput(string userInput) {
     inputField.Select();
-    if (controller.currentCutScene != null) {
+    if (controller.connectionLost) {
+      controller.AddLine("[CONNECTION LOST]");
+      return;
+    }
+    if (controller.currentCutScene != null && controller.currentCutScene.messages != null && controller.currentCutScene.messages.Length > 0) {
       this.controller.PlayLineFromCutScene();
     }
     else {
@@ -28,7 +32,7 @@ public class TextInput : MonoBehaviour {
       controller.AddLine(userInput);
 
       char[] delimChars = { ' ' };
-      string[] words = userInput.Split(delimChars);
+      string[] words = userInput.Split(delimChars, 2);
 
       foreach (KeyValuePair<string[], Action<string[]>> pair in controller.inputActions) {
         string[] actionKeys = pair.Key;
@@ -39,8 +43,6 @@ public class TextInput : MonoBehaviour {
         }
       }
     }
-
-
     InputComplete();
 
   }

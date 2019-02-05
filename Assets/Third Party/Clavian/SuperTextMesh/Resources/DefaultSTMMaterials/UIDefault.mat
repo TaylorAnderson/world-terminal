@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: UIDefault
   m_Shader: {fileID: 4800000, guid: c61f339ade7b3e849938050354b1c448, type: 3}
   m_ShaderKeywords: _EMISSION

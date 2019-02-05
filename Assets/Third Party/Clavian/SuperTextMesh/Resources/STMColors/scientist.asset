@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0319c3722ef2448bbb792c9f49790658, type: 3}
-  m_Name: rev
+  m_Name: scientist
   m_EditorClassIdentifier: 
   showFoldout: 1
-  color: {r: 0, g: 1, b: 0.75766015, a: 1}
+  color: {r: 0.9811321, g: 0.65819633, b: 0.6247775, a: 1}
